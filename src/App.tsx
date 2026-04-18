@@ -68,8 +68,8 @@ function App() {
   return (
     <div class="app-container">
       <h3>Prime Counter</h3>
-      <div class="controls">
-        <label for="reportIncrements">Web worker reporting frequency:</label>
+      <fieldset class="controls">
+        <legend>Web worker reporting frequency:</legend>
         <input
           id="reportIncrements"
           disabled={running()}
@@ -80,7 +80,7 @@ function App() {
           max="100"
         />
         <input
-          id="reportIncrements"
+          id="reportIncrements2"
           disabled={running()}
           type="number"
           value={reportIncrements()}
@@ -88,7 +88,7 @@ function App() {
           min="1"
           max="100"
         />
-      </div>
+      </fieldset>
       <div class="controls">
         <button onClick={runCalculation} disabled={!worker() || running()}>
           {running() ? "Counting primes" : "Count primes"}
