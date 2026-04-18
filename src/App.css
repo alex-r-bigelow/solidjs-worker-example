@@ -1,0 +1,42 @@
+.app-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  gap: 1em;
+}
+
+.progress-bar {
+  height: 1em;
+  background-color: black;
+}
+
+.results,
+.progress-text,
+.progress-container {
+  display: none;
+}
+
+.results.visible {
+  display: flex;
+  gap: 1em;
+}
+
+.progress-text.visible {
+  display: block;
+}
+
+.progress-container.visible {
+  display: block;
+  width: 100%;
+}
