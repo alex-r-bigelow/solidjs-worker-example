@@ -24,5 +24,8 @@
   },
   "dependencies": {
     "solid-js": "^1.9.5"
+  },
+  "repository": {
+    "url": "https://github.com/alex-r-bigelow/solidjs-worker-example"
   }
 }
